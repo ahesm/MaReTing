@@ -1,0 +1,17 @@
+<nav class='toolbar'>
+    <div class = 'home'>
+        <a href="/">마작레이팅</a>
+    </div>
+    <ul class='nav-ul'>
+        <li><a [routerLink]="['Notice']">공지</a></li>
+        <li><a [routerLink]="['Ranking']">랭킹</a></li>
+        <li><a [routerLink]="['Record']">기록입력</a></li>
+        <li><a [routerLink]="['Score']">개인기록</a></li>
+        <li><a [routerLink]="['Signin']">등록</a></li>
+    </ul>
+</nav>
+<div id="container">
+<div id="pages">
+    <router-outlet></router-outlet>
+</div>
+</div>

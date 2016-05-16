@@ -1,0 +1,82 @@
+
+h1{
+	font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif';
+	font-size: 3.0em;
+}
+
+#battle{
+    cursor: pointer;
+}
+
+.red{
+    color: red;
+}
+
+fieldset{
+    border: 2px solid;
+    border-radius: 5px;
+}
+
+#record{
+    display: inline-block;
+    width: 300px;
+    height: 220px;
+    line-height: 1.6em;
+}
+
+#record #recordin{
+    margin: 10px;
+    margin-left: 30px;
+}
+
+#statics{
+    display: inline-block;
+    width: 300px;
+    line-height: 1.6em;
+    margin-left: 20px;
+}
+
+#statics #staticsin{
+    margin: 10px;
+}
+
+#errors{
+    width: 625px;
+    margin-top:10px;
+    margin-bottom: 15px;
+}
+
+#button_rec{
+    width:625px;
+    -moz-box-shadow: 0px 1px 0px 0px #f0f7fa;
+	-webkit-box-shadow: 0px 1px 0px 0px #f0f7fa;
+	box-shadow: 0px 1px 0px 0px #f0f7fa;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, mediumseagreen), color-stop(1, mediumseagreen));
+	background:-moz-linear-gradient(top, mediumseagreen 5%, mediumseagreen 100%);
+	background:-webkit-linear-gradient(top, mediumseagreen 5%, mediumseagreen 100%);
+	background:-o-linear-gradient(top, mediumseagreen 5%, mediumseagreen 100%);
+	background:-ms-linear-gradient(top, mediumseagreen 5%, mediumseagreen 100%);
+	background:linear-gradient(to bottom, mediumseagreen 5%, mediumseagreen 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='mediumseagreen', endColorstr='mediumseagreen',GradientType=0);
+	background-color:mediumseagreen;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid mediumseagreen;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px -1px 0px #5b6178;
+}
+
+#button_rec:active{
+    position:relative;
+	top:1px;
+}
+
+

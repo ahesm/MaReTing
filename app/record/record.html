@@ -1,0 +1,43 @@
+<h1>기록입력<a id="battle" [ngClass]="{'red': rankgame}" (click)="onClick()">[{{battleType}}]</a></h1>
+<div>*점수입력은 기본점수를 시작점수를 기준으로 +,-로 적어주세요.<br>(예) 시작: 30000점,최종: 42000점 -> +12000</div><br>
+<div id="record">
+    <fieldset>
+        <legend>기록입력</legend>
+        <div id="recordin">
+            <select [(ngModel)]="jang">
+                <option value="don">동장전</option>
+                <option value="ban">반장전</option>
+                <option value="han">한장전</option>
+            </select>
+            <br>
+            <div *ngFor="let user of userData">
+                <span>{{user.wind}}</span>
+                <input type="text" size=8 [(ngModel)]="user.id" (ngModelChange)="onChange($event)">
+                <input type="text" size=5 [(ngModel)]="user.score" (ngModelChange)="onChange($event)">
+            </div>
+            <div>
+                <span>공탁금</span>
+                <input type="text" size=8 [(ngModel)]="gongtak">
+            </div>
+        </div>
+    </fieldset>
+</div>
+<div id="statics">
+    <fieldset>
+        <legend>통계</legend>
+        <div id="staticsin">
+            <div *ngFor="let user of userDataP; let i = index">
+                 {{i+1}}위:&nbsp;<span *ngIf="user.grade!=0"> [{{user.wind}}] {{user.id}} </span>
+            </div>       
+        </div>
+    </fieldset>
+</div>
+<div id="errors">
+    <fieldset>
+        <legend>검사</legend>
+        <div id="errorsin">
+            점수차: {{getDif()}}
+        </div>    
+    </fieldset>
+</div>
+<button id="button_rec">입력</button>
