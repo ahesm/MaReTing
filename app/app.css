@@ -9,23 +9,70 @@
     
     margin: 0;
     padding: 0;
+    
+    height: 56px;
+    min-height: 56px;
+    padding: 0 16px;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.26);
+    
+    box-sizing: border;
+    display: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    
+    overflow: hidden;
+}
+
+.home{
+    display: block;
+    float: left;
+    font-size: 28px;
+    height: 56px;
+    line-height: 56px;
+    overflow: hidden;
+}
+
+.home a{
+    text-decoration: none;
+    color: white;
 }
 
 .nav-ul{
+    display: block;
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
+    font-size: 23px;
+    
+    padding-left: 80px;
+    
 }
 
 .nav-ul > li{
     float: left;
 }
 
-li a {
+.nav-ul > li a {
     display: block;
     color: white;
-    text-align: center;
-    padding: 14px 16px;
     text-decoration: none;
+    padding: 0 16px;
+    line-height: 56px;
+}
+
+.nav-ul > li:last-child{
+    float: right;
+    margin-right: 50px;
+}
+
+.nav-ul > li:hover{
+    background-color: rgb(51,169,103);
+    transition: 0.3s;
+}
+
+#container{
+    text-align: center;
 }
